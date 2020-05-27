@@ -1,0 +1,56 @@
+*{margin: 0;
+padding: 0;
+}
+body{background:#e6e6e6;}
+header, .main,footer{
+   
+    /*with es se usa en porcentajes para que sea adaptable margin auto para centrarlo
+    max with para decirle el tamaño que debera tener */
+    width: 90%;
+    max-width: 1000px;
+    margin:20px auto;
+}
+/*overflow hidden sirve para oculta r el contenido que sobrepasa nuestro contenedor y la otra es que limpia los float left*/
+header nav{ background: #528FD5;
+overflow: hidden;}
+header nav ul{list-style: none;}
+/*la propiedad float en left sirve para que todo se apile uno alado del otro*/ 
+header nav ul li{float: left;}
+/*con display block te permite tener un padding arriba ya bajo sino le pones eso no funcionara*/
+header nav ul li a{
+    padding: 10px 20px;
+    display:block;
+    color: white;
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    background: #75ACEC;
+    font-size: 20px;
+    color: crimson;
+}
+.main .articles{
+    width: 68.5%;
+    float: left;
+    margin-right: 1.5%;
+}
+.main .articles article{
+    padding: 20px;
+    background: white;
+    margin-bottom: 20px;
+}
+aside{
+    width: 30%;
+    background: #ff8000;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+footer{
+    background: black;
+    color: white;
+    clear: both;
+    /*clear both simpiar para limpiar los rastros que dejan los float left*/
+    padding: 10px 0px;
+    text-align: center;
+}
+
